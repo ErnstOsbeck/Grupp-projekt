@@ -1,0 +1,11 @@
+body{
+    background-color:red;
+}
+nav > ul{
+    display: grid; 
+    height:100%; 
+    gap:25px; 
+    grid-template-columns: 1fr 1fr;
+    margin:0; 
+    padding:0; 
+}
