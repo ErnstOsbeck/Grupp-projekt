@@ -1,11 +1,73 @@
-body{
-    background-color:red;
+
+
+header{
+    grid-area:header; 
+    display: grid;
+    grid-template-rows:auto auto; 
+}
+main{
+    grid-area: main; 
+    text-align: center; 
+    border: 1px solid; 
 }
 nav > ul{
     display: grid; 
     height:100%; 
     gap:25px; 
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr; 
     margin:0; 
     padding:0; 
+}
+footer{
+    grid-area: footer; 
+}
+a{
+    text-decoration: none; 
+}
+
+li{
+    text-align: center; 
+    list-style: none; 
+    display: grid; 
+    justify-content: stretch; 
+    border: 1px solid black; 
+    padding: 10px; 
+    margin-bottom: 15px; 
+    border-radius: 10px; 
+}
+.wrapper{
+    height: 100%; 
+    display: grid; 
+    grid-template-rows:150px auto 55px ;
+        "header"
+        "main"
+        "footer"
+}
+.Intressen{
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+}
+.Burger{
+    border: 1px solid; 
+    padding: 10px;
+    border-radius: 10px;
+}
+.Fries{
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 10px;
+}
+.Steak{
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 10px;
+}
+img{
+    max-width: 100%;
+    height: auto; 
+    border-radius: 10px; 
+}
+footer{
+    grid-area: footer;
 }
