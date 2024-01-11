@@ -8,7 +8,7 @@ header{
 main{
     grid-area: main; 
     text-align: center; 
-    border: 1px solid; 
+ 
 }
 nav > ul{
     display: grid; 
@@ -39,32 +39,43 @@ li{
     height: 100%; 
     display: grid; 
     grid-template-rows:150px auto 55px ;
+    grid-template-areas: 
         "header"
         "main"
-        "footer"
+        "footer";      
 }
-.Intressen{
+.meny{
     display: grid; 
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 25px;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-areas: 
+    "Burger"
+    "Fries"
+    "Steak";
+}
+#Banner{
+    width: 100%;
+    height: auto;
 }
 .Burger{
     border: 1px solid; 
     padding: 10px;
     border-radius: 10px;
+    grid-area: "Burger";
 }
 .Fries{
     border: 1px solid;
     padding: 10px;
     border-radius: 10px;
+    grid-area: "Fries";
 }
 .Steak{
     border: 1px solid;
     padding: 10px;
     border-radius: 10px;
+    grid-area: "Steak";
 }
 img{
-    max-width: 100%;
+    width: 300px;
     height: auto; 
     border-radius: 10px; 
 }
