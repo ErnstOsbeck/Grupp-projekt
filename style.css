@@ -8,7 +8,7 @@ header{
 main{
     grid-area: main; 
     text-align: center; 
- 
+    height:98% ;
 }
 nav > ul{
     display: grid; 
@@ -18,13 +18,21 @@ nav > ul{
     margin:0; 
     padding:0; 
 }
+h2{
+    Border: 1px solid black;
+    border-radius: 10px;
+}
 footer{
     grid-area: footer; 
+    background-color: gray;
 }
 a{
     text-decoration: none; 
 }
+.Info{
+    font-size: 19px;
 
+}
 li{
     text-align: center; 
     list-style: none; 
@@ -44,13 +52,15 @@ li{
         "main"
         "footer";      
 }
-.meny{
+#meny{
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr ;
     grid-template-areas: 
     "Burger"
     "Fries"
     "Steak";
+    width: 50px;
+         
 }
 #Banner{
     width: 100%;
@@ -61,6 +71,7 @@ li{
     padding: 10px;
     border-radius: 10px;
     grid-area: "Burger";
+    
 }
 .Fries{
     border: 1px solid;
@@ -81,4 +92,25 @@ img{
 }
 footer{
     grid-area: footer;
+}
+#mustang{
+    height: auto;
+    width: 100%;
+}
+.side_2 > wrapper{
+    height: 100%; 
+    width: 100%;
+    display: grid; 
+    grid-template-rows:10% 80% 10%;
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer"; 
+}
+#meny > section{
+    border: solid 1px black;
+    border-radius: 20px;
+    margin-left:160px;
+    margin-right:160px;
+    margin-bottom:50px ;
 }
