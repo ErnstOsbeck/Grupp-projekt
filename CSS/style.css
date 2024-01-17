@@ -2,11 +2,15 @@ header{
     grid-area:header; 
     display: grid;
     grid-template-rows:auto auto; 
+    background-color: #ff0000;
 }
 main{
     grid-area: main; 
     text-align: center; 
     height:98% ;
+}
+body{
+    background-color: #F6412D;
 }
 nav > ul{
     display: grid; 
@@ -23,6 +27,11 @@ h2{
 footer{
     grid-area: footer; 
     background-color: gray;
+    padding: 2px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: none;
+    grid-template-areas: "leftFooter" "rightFooter";
 }
 a{
     text-decoration: none; 
@@ -88,23 +97,11 @@ img{
     height: auto; 
     border-radius: 10px; 
 }
-footer{
-    grid-area: footer;
-}
+
 #mustang, #corvette, #superbird{
     height: auto;
     width: 100%;
     position: relative;
-}
-.sida_2 > wrapper{
-    height: 100%; 
-    width: 100%;
-    display: grid; 
-    grid-template-rows:10% 80% 10%;
-    grid-template-areas: 
-        "header"
-        "main"
-        "footer"; 
 }
 #meny > section{
     border: solid 1px black;
@@ -112,6 +109,7 @@ footer{
     margin-left:160px;
     margin-right:160px;
     margin-bottom:50px ;
+    background-color:white ;
 }
 #burgare, #fries, #steak{
     position: absolute;
@@ -121,7 +119,7 @@ footer{
     right:auto ;
     border: 1px solid black;
     padding: 10px;
-    padding-bottom: 100px;
+    padding-bottom: 130px;
     padding-top: 50px;
     background-color: white;
 }
@@ -136,4 +134,22 @@ footer{
     position: absolute;
     left: 79.5%;
     top: 49%;
+}
+#sida_3 > .namn, #sida_4 > .namn{
+    left: 80.5%;
+}
+.pris{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+footer:nth-child(1){
+    grid-area: leftFooter;
+}
+
+footer:nth-child(2){
+    grid-area: rightFooter;
+}
+.wrapper:nth-child(3){
+    padding: 15x;
 }
